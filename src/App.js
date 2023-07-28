@@ -8,6 +8,7 @@ import TrabajosRealizados from "./components/trabajosRealizados/trabajosRealizad
 import NavBar from "./components/mainComponents/navBar";
 import FooterCS from "./components/mainComponents/footerCS";
 import Cuerpo from "./components/menu/cuerpo";
+import Login from "./components/login/login";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
               <Route path="/servicios" element={<Servicios />} />
               <Route path="/quinesSomos" element={<QuienesSomos />} />
               <Route path="/contactos" element={<Contactos />} />
+              <Route path="/login" element={<Login />} />
               <Route
                 path="/trabajosRealizados"
                 element={<TrabajosRealizados />}
