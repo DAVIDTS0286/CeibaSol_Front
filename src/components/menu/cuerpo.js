@@ -35,7 +35,7 @@ export default class Cuerpo extends Component {
                       transition={{ duration: 0.5 }}
                     >
                       <img
-                        src="https://i.imgur.com/b3AJFOU.png"
+                        src="arbol-ceiba-icono-sinfondo.png"
                         alt="..."
                         class="transition duration-300 t max-w-full h-auto align-middle border-none"
                       />

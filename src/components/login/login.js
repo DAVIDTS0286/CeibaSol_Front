@@ -41,7 +41,7 @@ export default function Login() {
           <div class="flex flex-col items-center justify-center mb-12">
             <img
               className="hover:animate-pulse object-contain h-40 w-40 rounded-full border-8 border-slate-100 bg-slate-100"
-              src="https://i.imgur.com/b3AJFOU.png"
+              src="arbol-ceiba-icono-sinfondo.png"
               alt="CeibaSol Logo"
             />
             <p
@@ -63,7 +63,7 @@ export default function Login() {
               <input
                 aria-labelledby="email"
                 type="text"
-                class="bg-gray-200 border rounded  text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"
+                class={activar ? "bg-gray-200 border-2 rounded border-red-700 text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2" : "bg-gray-200 border rounded text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"}
                 onChange={(e) => setUserName(e.target.value)}
               />
             </div>
@@ -78,7 +78,7 @@ export default function Login() {
                 <input
                   id="pass"
                   type={viewPassword ? "password" : "text"}
-                  class="bg-gray-200 border rounded  text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"
+                  class={activar ? "bg-gray-200 border-2 rounded border-red-700 text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2" : "bg-gray-200 border rounded text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"}
                   onChange={(e) => setPassword(e.target.value)}
                 />
                 <div

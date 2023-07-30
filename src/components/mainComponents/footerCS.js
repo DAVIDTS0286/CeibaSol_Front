@@ -5,13 +5,13 @@ export default function FooterCS() {
   return (
     <>
       <div className="min-h-full ">
-        <footer class="text-center lg:text-left bg-gray-300 text-gray-900 border-2 border-t-gray-400">
+        <footer class="text-center lg:text-left bg-gray-300 text-gray-900 border-t-2 border-gray-400">
           <div class="mx-2 py-2 text-center md:text-left">
             <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-12 ">
              
               <div class="lg:w-48 xl:w-48 2xl:w-48">
                 <div className="flex justify-center">
-                <img className="h-24 w-24" src="https://i.imgur.com/b3AJFOU.png" alt="logo"/>
+                <img className="h-24 w-24" src="arbol-ceiba-icono-sinfondo.png" alt="logo"/>
                 </div>
                 
                 <div>

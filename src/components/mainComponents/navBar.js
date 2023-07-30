@@ -48,7 +48,7 @@ export default function NavBar() {
       <div className="min-h-full ">
         <Disclosure
           as="nav"
-          className="bg-white-800 border-4 border-b-gray-300"
+          className="bg-gray-200 border-b-4 border-gray-300"
         >
           {({ open }) => (
             <>
@@ -59,7 +59,7 @@ export default function NavBar() {
                       <a href="/" rel="noreferrer">
                         <img
                           className="hover:animate-pulse object-contain h-20 w-21"
-                          src="https://i.imgur.com/hyA2REn.png"
+                          src="logo-ceiba-icono-sinfondo.png"
                           alt="CeibaSol Logo"
                         />
                       </a>
@@ -108,7 +108,7 @@ export default function NavBar() {
                   </div>
                   <div className="-mr-2 flex md:hidden">
                     {/* Version telefono menu */}
-                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-gray-700 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-lime-700 p-2 text-slate-100 border border-slate-100 hover:border-lime-700 hover:bg-slate-100 hover:text-lime-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="sr-only">Abrir Menu</span>
                       {open ? (
                         <XMarkIcon
