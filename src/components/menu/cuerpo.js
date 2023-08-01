@@ -43,7 +43,7 @@ export default class Cuerpo extends Component {
                   </div>
                 </div>
 
-                <div class="flex flex-wrap justify-center ">
+                <div data-aos="fade-up" class="flex flex-wrap justify-center ">
                   <div class=" block p-6 bg-white rounded-lg ">
                     <h5 class=" mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                       ¿Que es CeibaSol?
@@ -51,7 +51,7 @@ export default class Cuerpo extends Component {
                   </div>
                 </div>
 
-                <div class="flex flex-wrap justify-center">
+                <div data-aos="fade-up" class="flex flex-wrap justify-center">
                   <div class="block p-6 bg-white rounded-lg">
                     <p class="text-center mx-40 italic leading-loose ">
                       <strong>CEIBA SOL S.A.S.</strong> es un grupo de
@@ -72,7 +72,7 @@ export default class Cuerpo extends Component {
             <div className="px-4 py-6 sm:px-0">
               {/* bg-lime-100 rounded-lg border-4 border-dashed border-gray-900 */}
               <div className="">
-                <div className="flex space-x-2 justify-center ">
+                <div data-aos="fade-right" className="flex space-x-2 justify-center ">
                   <h1 className="mb-3 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-4xl">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r to-lime-600 from-lime-900">
                       Empresas con las que hemos colaborado

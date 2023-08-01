@@ -126,7 +126,7 @@ export default function NavBar() {
                 </div>
               </div>
 
-              <Disclosure.Panel className="md:hidden ">
+              <Disclosure.Panel data-aos="zoom-in" className="md:hidden ">
                 <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
                   {navigation.map((item) => (
                     <Disclosure.Button
