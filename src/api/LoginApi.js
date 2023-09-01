@@ -1,4 +1,4 @@
-import { api, getResponseData, escalateError } from "./index";
+import { api, getResponseData} from "./index";
 
 export default class LoginApi {
     // ENVIO LA DATA AL BACK
@@ -12,7 +12,6 @@ export default class LoginApi {
     };
     return api
       .post("admin/signIn", loginData)
-      .then(getResponseData)
-      .catch(escalateError);
+      .then(getResponseData);
   }
 }

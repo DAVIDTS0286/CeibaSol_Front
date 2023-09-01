@@ -21,6 +21,7 @@ export default class Cuerpo extends Component {
             </motion.h1>
           </div>
         </header>
+
         <main>
           <div className="mx-auto max-w-7xl py-2 sm:px-6 lg:px-10 ">
             {/* Replace with your content */}
@@ -43,27 +44,45 @@ export default class Cuerpo extends Component {
                   </div>
                 </div>
 
-                <div data-aos="fade-up" class="flex flex-wrap justify-center ">
-                  <div class=" block p-6 bg-white rounded-lg ">
-                    <h5 class=" mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
-                      ¿Que es CeibaSol?
+                <div
+                  data-aos="fade-up"
+                  class="flex flex-wrap justify-center bg-lime-700 rounded-lg rounded-[24px]"
+                >
+                  <div class=" block p-2 ">
+                    <h5 class=" mb-2 text-2xl font-bold tracking-tight text-slate-50">
+                      ¿ Que es CeibaSol ?
                     </h5>
                   </div>
                 </div>
-
+                <div
+                  data-aos="fade-up"
+                  class="flex flex-wrap justify-center mt-6"
+                >
+                  <img
+                    src="fondoInicio.jpeg"
+                    alt="..."
+                    class="transition duration-300 w-9/12 sm:w-6/12 rounded-lg rounded-[24px]"
+                  />
+                </div>
                 <div data-aos="fade-up" class="flex flex-wrap justify-center">
-                  <div class="block p-6 bg-white rounded-lg">
-                    <p class="text-center mx-40 italic leading-loose ">
-                      <strong>CEIBA SOL S.A.S.</strong> es un grupo de
-                      personas trabajando en pro de la sostenibilidad, brindando
+                  <div class="block mt-6 bg-white rounded-lg">
+                  <blockquote class="p-4 my-4 border-l-4 border-lime-500 bg-gray-50">
+                    <p class="text-center sm:mx-40 italic leading-loose ">
+                      <strong>CEIBA SOL S.A.S.</strong> es un grupo de personas
+                      trabajando en pro de la sostenibilidad, brindando
                       resolución a las problemáticas ambientales por medio de la
-                      consultoria.<p>Ofecemos un amplio catalogo de servicios
-                      ambientales dirigidos por un equipo profesional calificado
-                      para brindar un trabajo de alta calidad, basado en la
-                      responsabilidad, honestidad y compromiso, con el fin de
-                      garantizar de manera veraz y transparente el cumplimiento
-                      de los requerimientos solicitados por nuestros clientes.</p> 
+                      consultoria.
+                      <p>
+                        Ofecemos un amplio catalogo de servicios ambientales
+                        dirigidos por un equipo profesional calificado para
+                        brindar un trabajo de alta calidad, basado en la
+                        responsabilidad, honestidad y compromiso, con el fin de
+                        garantizar de manera veraz y transparente el
+                        cumplimiento de los requerimientos solicitados por
+                        nuestros clientes.
+                      </p>
                     </p>
+                    </blockquote>
                   </div>
                 </div>
               </div>
@@ -71,15 +90,18 @@ export default class Cuerpo extends Component {
 
             <div className="px-4 py-6 sm:px-0">
               {/* bg-lime-100 rounded-lg border-4 border-dashed border-gray-900 */}
-              <div className="">
-                <div data-aos="fade-right" className="flex space-x-2 justify-center ">
-                  <h1 className="mb-3 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-4xl">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r to-lime-600 from-lime-900">
-                      Empresas con las que hemos colaborado
-                    </span>
-                  </h1>
-                </div>
 
+              <div
+                data-aos="fade-right"
+                className="flex space-x-2 justify-center rounded-lg rounded-[24px]"
+              >
+                <h1 className="my-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-4xl">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r to-lime-600 from-lime-900">
+                    Empresas con las que hemos colaborado
+                  </span>
+                </h1>
+              </div>
+              <div class="bg-gray-300 rounded-lg rounded-[24px]">
                 <Carrusel></Carrusel>
               </div>
             </div>

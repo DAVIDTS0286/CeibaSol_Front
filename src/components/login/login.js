@@ -10,6 +10,7 @@ export default function Login() {
   const [viewPassword, setViewPassword] = useState(true);
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  const [mensajeError, setMensajeError] = useState("");
 
   const logIn = () => {
     const data = {
@@ -25,6 +26,7 @@ export default function Login() {
         window.location.href = "/";
       })
       .catch((res) => {
+        setMensajeError(res.response.data.err);
         setActivar(true);
       });
   };
@@ -36,7 +38,7 @@ export default function Login() {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          class="bg-white shadow rounded border-2 border-neutral-400 lg:w-1/3  md:w-1/2 w-full p-10 "
+          class="bg-white shadow rounded rounded-[14px] border-2 border-neutral-400 lg:w-1/3 md:w-1/2 w-full p-10 "
         >
           <div class="flex flex-col items-center justify-center mb-12">
             <img
@@ -63,7 +65,11 @@ export default function Login() {
               <input
                 aria-labelledby="email"
                 type="text"
-                class={activar ? "bg-gray-200 border-2 rounded border-red-700 text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2" : "bg-gray-200 border rounded text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"}
+                class={
+                  activar
+                    ? "bg-gray-200 border-2 rounded border-red-700 text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"
+                    : "bg-gray-200 border rounded text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"
+                }
                 onChange={(e) => setUserName(e.target.value)}
               />
             </div>
@@ -78,7 +84,11 @@ export default function Login() {
                 <input
                   id="pass"
                   type={viewPassword ? "password" : "text"}
-                  class={activar ? "bg-gray-200 border-2 rounded border-red-700 text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2" : "bg-gray-200 border rounded text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"}
+                  class={
+                    activar
+                      ? "bg-gray-200 border-2 rounded border-red-700 text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"
+                      : "bg-gray-200 border rounded text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"
+                  }
                   onChange={(e) => setPassword(e.target.value)}
                 />
                 <div
@@ -91,7 +101,7 @@ export default function Login() {
             </div>
             <div class="py-8">
               <button
-                class="ease-out duration-500 text-sm font-semibold leading-none text-white focus:outline-none bg-lime-700 border rounded hover:bg-zinc-300 hover:text-zinc-900 py-4 w-full"
+                class="ease-out duration-500 text-sm font-semibold leading-none text-white focus:outline-none bg-lime-700 border rounded-[24px] hover:bg-zinc-300 hover:text-zinc-900 py-4 w-full"
                 onClick={() => logIn()}
               >
                 Inicio de Sesion
@@ -111,8 +121,8 @@ export default function Login() {
                   <BsFillInfoCircleFill />
                 </div>
                 <div class="ml-3 text-sm font-medium">
-                  Acceso incorrecto el <strong>usuario</strong> o la{" "}
-                  <strong>contraseña</strong> no son validos{" "}
+                  <strong>Acceso incorrecto</strong>
+                  {" -> " + mensajeError}
                 </div>
                 <button
                   type="button"

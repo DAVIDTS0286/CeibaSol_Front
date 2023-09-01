@@ -32,7 +32,7 @@ function CarruselCuatro() {
     <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
       <Carousel slideInterval={500} indicators={false}>
         {images.map((image) => (
-          <div key={image.id} className="w-56 sm:w-64 xl:w-72 2xl:w-80">
+          <div key={image.id} className="w-48 sm:w-56 xl:w-60 2xl:w-64">
             <img src={image.image} alt={image.title} />
           </div>
         ))}

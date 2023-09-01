@@ -17,8 +17,8 @@ export default function QuienesSomos() {
             <div class="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
               <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/4 md:order-1 flex-auto p-6">
-                  <div class="flex-none w-52 ">
-                    <img src="default-avatar.png" alt="" class="relative inset-0 w-500 h-500 object-cover rounded-lg" loading="lazy" />
+                  <div class="flex-none w-52 md:place-content-center">
+                    <img src="julian-f.png" alt="" class="relative inset-0 w-500 h-500 object-cover rounded-lg" loading="lazy" />
                   </div>
                 </div>
                 <div className="md:w-3/4 md:order-2">
