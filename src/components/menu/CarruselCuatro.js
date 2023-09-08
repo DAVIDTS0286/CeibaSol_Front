@@ -14,17 +14,26 @@ const images = [
   },
   {
     id: "3",
-    title: "Coca Cola",
+    title: "Holcim",
     image:
-      "https://omniaestudio.es/wp-content/uploads/2020/10/coca-cola-logo-260x260-01-370x370-1.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Holcim_logo.svg/320px-Holcim_logo.svg.png",
   },
 
   {
     id: "4",
-    title: "Instagram",
+    title: "Alcaldia de Busbanza",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Escudo_de_Busbanz%C3%A1.svg/1200px-Escudo_de_Busbanz%C3%A1.svg.png",
   },
+
+  {
+    id: "5",
+    title: "Colegio Juan Jose Samanieg",
+    image:
+      "https://matematicasjjs.files.wordpress.com/2013/11/escudo.jpg",
+  },
+
+ 
 ];
 
 function CarruselCuatro() {

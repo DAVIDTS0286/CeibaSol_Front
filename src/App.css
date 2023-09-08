@@ -20,7 +20,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(20px + 2vmin);
   color: white;
 }
 
@@ -34,5 +34,48 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.btn-flotante {
+	font-size: 80px; /* Cambiar el tamaño de la tipografia */
+	text-transform: uppercase; /* Texto en mayusculas */
+	font-weight: bold; /* Fuente en negrita o bold */
+	letter-spacing: 4px; /* Espacio entre letras */
+
+	padding: 13px 25px; /* Relleno del boton */
+	position: fixed;
+	bottom: 45px;
+	right: 30px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+}
+
+
+.btn-flotante-scrolled {
+  bottom: 190px;
+  transition: bottom 1s ease-in-out;
+}
+
+.btn-flotante-bottom {
+  bottom: 190px;
+}
+
+@media only screen and (max-width: 600px) {
+ 	.btn-flotante {
+		font-size: 20px;
+		padding: 22px 400px;
+		bottom: 10px;
+		right: 25px;
+  
+    transition-delay: 10s;
+	}
+}
+
+@media (max-width: 640px) {
+  .btn-flotante {
+    font-size: 0.8rem;
+    padding: 8px 12px; 
   }
 }

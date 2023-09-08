@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
 import { AiOutlineLoading } from "react-icons/ai";
 import { BsHouse, BsTelephone, BsClockHistory } from "react-icons/bs";
 import { CiMail } from "react-icons/ci";
 
 import ContactoApi from "../../api/ContactoApi";
-import backgroundImage from "./fondoCon.jpg";
+
 
 export default function Contactos() {
-  const [offsetY, setOffsetY] = useState(0);
+  
   const [nombre, setNombre] = useState("");
   const [correo, setCorreo] = useState("");
   const [telefono, setTelefono] = useState("");
@@ -18,29 +18,8 @@ export default function Contactos() {
   const [mensajeEmergente, setMensajeEmergente] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const handleScroll = () => setOffsetY(window.pageYOffset);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const styles = {
-    backgroundImage: `url(${backgroundImage})`,
-    backgroundSize: "auto",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: `center ${offsetY * 0.3}px`,
-    minHeight: "100vh",
-  };
-
-  const styles1 = {
-    backgroundSize: "auto",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: `center ${offsetY * -0.9}px`,
-    minHeight: "100vh",
-  };
-
+  
   const cleanFields = () => {
     setNombre("");
     setCorreo("");
@@ -71,49 +50,34 @@ export default function Contactos() {
       });
   };
 
+  
+
   return (
-    <div data-aos="zoom-out-up" class="" style={styles}>
+    <div data-aos="zoom-out-up" class="">
       <header class="">
         <div
           data-aos="fade-up"
           className="scroll-smooth hover:scroll-auto pt-6 flex space-x-2 justify-center "
         >
-          <h1 class="animate-pulse text-5xl font-medium leading-tight text-white mb-2.5">
+          <h1 className="text-5xl font-medium leading-tight text-gray-800 mb-2.5 mt-0">
             CONTACTOS
           </h1>
+          
         </div>
       </header>
       <main
-        className="sm:px-40 scroll-smooth hover:scroll-auto"
-        style={styles1}
+        className="scroll-smooth hover:scroll-auto"
+        
       >
         <div className=" mb-2 bg-white shadow mx-auto max-w-7xl py-2 sm:px-6 lg:px-10 ">
           {/* Replace with your content */}
-          <div className="px-4 py-6 sm:px-0">
-            <div className="bg-white-100 ">
-              <div className="flex space-x-2 justify-center">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit, proin
-              tristique molestie ante sodales quis quam blandit, suscipit donec
-              dignissim mus ligula nam. Sociis vestibulum tempor habitasse
-              potenti platea rutrum fusce ornare eget himenaeos porta libero
-              conubia tellus ullamcorper, et vulputate cum velit sagittis magna
-              justo enim orci metus in faucibus congue primis. Nostra per platea
-              convallis netus varius orci cursus eu velit, auctor tempus sem
-              nascetur curabitur metus potenti litora, etiam class semper proin
-              morbi lacinia volutpat nunc. Etiam feugiat elementum vestibulum
-              tellus sodales condimentum urna, rhoncus sed penatibus magna
-              maecenas varius, metus platea facilisis sagittis pellentesque hac.
-              Semper mollis viverra metus varius lacus massa iaculis erat,
-              commodo gravida consequat sodales dis curae. Neque eleifend
-              lacinia himenaeos ultricies est cras nisl auctor, mauris aliquet
-              rhoncus a non vulputate habitant hendrerit, metus potenti
-              tristique orci aliquam natoque tortor facilisi, nisi id sed platea
-              nunc gravida conubia.
-              </div>
-              <div class="grid gap-8 grid-cols-2 items-center m-10">
+          <div className="px-4 py-6 sm:px-0 ">
+          <div className=" ">
+              
+              <div class="grid gap-10 grid-cols-2 m-10 lg:px-40 ">
                 <div
                   data-aos="fade-down-right"
-                  class="max-w-sm p-6 bg-white hover:bg-gray-50 border border-lime-600 rounded-lg rounded-[12px] shadow "
+                  class="max-w-sm p-6 bg-white text-center hover:bg-gray-50 border border-lime-600 rounded-lg rounded-[12px] shadow "
                 >
                   <div class="flex justify-center">
                     <BsHouse class="w-10 h-10 mb-2 text-lime-500 animate-bounce"></BsHouse>
@@ -127,7 +91,7 @@ export default function Contactos() {
                 </div>
                 <div
                   data-aos="fade-down-left"
-                  class="max-w-sm p-6 bg-white hover:bg-gray-50 border border-lime-600 rounded-lg rounded-[12px] shadow"
+                  class="max-w-sm p-6 bg-white text-center hover:bg-gray-50 border border-lime-600 rounded-lg rounded-[12px] shadow"
                 >
                   <div class="flex justify-center">
                     <CiMail class="w-10 h-10 mb-2 text-lime-500 animate-bounce"></CiMail>
@@ -141,7 +105,7 @@ export default function Contactos() {
                 </div>
                 <div
                   data-aos="fade-up-right"
-                  class="max-w-sm p-6 bg-white hover:bg-gray-50 border border-lime-600 rounded-lg rounded-[12px] shadow"
+                  class="max-w-sm p-6 bg-white text-center  hover:bg-gray-50 border border-lime-600 rounded-lg rounded-[12px] shadow"
                 >
                   <div class="flex justify-center">
                     <BsTelephone class="w-10 h-10 mb-2 text-lime-500 animate-bounce"></BsTelephone>
@@ -155,7 +119,7 @@ export default function Contactos() {
                 </div>
                 <div
                   data-aos="fade-up-left"
-                  class="max-w-sm p-6 bg-white hover:bg-gray-50 border border-lime-600 rounded-lg rounded-[12px] shadow"
+                  class="max-w-sm p-6 bg-white text-center  hover:bg-gray-50 border border-lime-600 rounded-lg rounded-[12px] shadow"
                 >
                   <div class="flex justify-center">
                     <BsClockHistory class="w-10 h-10 mb-2 text-lime-500 animate-bounce"></BsClockHistory>
@@ -168,14 +132,14 @@ export default function Contactos() {
                   </p>
                 </div>
               </div>
-              <div class="items-center shadow">
+              <div class="items-center shadow sm:px-40">
                 <div
                   data-aos="zoom-out-up"
                   className="flex space-x-2 justify-center "
                 >
                   <iframe
                     title="ubicacion"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63519.663296554856!2d-72.96614849428158!3d5.716169144911916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a4674de99eae1%3A0x85f7d804dcaad1a6!2sParque%20El%20Laguito!5e0!3m2!1ses!2sco!4v1675704068375!5m2!1ses!2sco"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.9202437310173!2d-72.9214002!3d5.724628099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a460b3b57451f%3A0xcc8e4dcd320da3c5!2sCl.%2023%20%239a-56%2C%20Sogamoso%2C%20Boyac%C3%A1!5e0!3m2!1ses!2sco!4v1681671906802!5m2!1ses!2sco"
                     width="100%"
                     height="400"
                     style={{ border: "0" }}
@@ -186,13 +150,15 @@ export default function Contactos() {
                   ></iframe>
                 </div>
               </div>
-              <div class="mt-10 inline-flex items-center justify-center w-full">
+
+              <div id="form" class="mt-10 sm:px-40 inline-flex flex justify-center items-center w-full ">
                 <hr class="w-full h-px bg-lime-600 border-0 "></hr>
               </div>
-              <div class="">
-                <h1 class="text-3xl mb-8 text-center ">
+              <h1 class="text-3xl mb-8 text-center ">
                   <strong>Buscanos en</strong>
                 </h1>
+              <div class="flex justify-center items-center sm:px-40">
+                
                 <div class="flex justify-center">
                   <div data-aos="fade-right">
                     <a
@@ -222,7 +188,7 @@ export default function Contactos() {
                   </div>
                   <div data-aos="fade-left">
                     <a
-                      href="https://www.instagram.com/ceiba_sol/"
+                      href="https://api.whatsapp.com/send?phone=3133802420&text=Hola,%20quiero%20hacer%20una%20consulta"
                       TARGET="blank"
                       rel="noreferrer"
                     >
@@ -230,18 +196,20 @@ export default function Contactos() {
                         className="hover:animate-pulse object-contain h-20 w-21 mx-8"
                         src="https://cdn-icons-png.flaticon.com/512/124/124034.png?w=360"
                         alt="WhatsApp"
+                        style={{ borderRadius: "10px" }}
                       />
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="inline-flex items-center justify-center w-full">
+              <div class="inline-flex items-center justify-center w-full sm:px-40">
                 <hr class="w-full h-px bg-lime-600 border-0 "></hr>
               </div>
             </div>
-            <div>
-              <br></br>
+            <div className="mt-6">
+   
               <div
+              id="escribenos"
                 data-aos="zoom-in"
                 class="relative max-w-2xl rounded-lg rounded-[12px] border border-gray-400 bg-white py-5 px-5 m-auto w-full hover:bg-slate-100"
               >
@@ -356,6 +324,7 @@ export default function Contactos() {
               <br></br>
             </div>
           </div>
+          
           {/* /End replace */}
         </div>
         <br></br>
