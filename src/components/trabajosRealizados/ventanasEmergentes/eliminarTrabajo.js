@@ -31,13 +31,17 @@ export default function EliminarTrabajo(props) {
   };
 
   return (
-    <div class="max-w-sm p-6 bg-white rounded-lg  ">
+<div className="container mx-auto p-4">
+    <div class=" max-w-sm p-2 bg-white rounded-lg  ">
+
+
+
       <div
         data-aos="flip-up"
         className="flex flex-wrap justify-center bg-lime-700 rounded-lg rounded-[24px] mb-8"
       >
         <div className=" block p-2 text-center">
-          <h5 className=" mb-2 text-2xl font-bold tracking-tight text-slate-50">
+          <h5 className="text-2xl font-bold tracking-tight text-slate-50 mb-2">
             {nameWork}
           </h5>
         </div>
@@ -49,13 +53,14 @@ export default function EliminarTrabajo(props) {
       <center>
         <div className="flex justify-evenly">
           <button
-            className="ease-out duration-500 text-sm font-semibold leading-none text-white focus:outline-none bg-emerald-700 border rounded-[15px] hover:bg-zinc-300 hover:text-zinc-900 py-4 w-16"
+            className="ease-out duration-500 text-sm font-semibold leading-none text-white focus:outline-none bg-lime-700 border rounded-[15px] hover:bg-zinc-300 hover:text-zinc-900 py-4 w-16"
             onClick={() => handleDeleteWork()}
           >
             Si
           </button>{" "}
         </div>
       </center>
+    </div>
     </div>
   );
 }

@@ -54,12 +54,12 @@
 
 
 .btn-flotante-scrolled {
-  bottom: 190px;
+  bottom: 230px;
   transition: bottom 1s ease-in-out;
 }
 
 .btn-flotante-bottom {
-  bottom: 190px;
+  bottom: 300px;
 }
 
 @media only screen and (max-width: 600px) {

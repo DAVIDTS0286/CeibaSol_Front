@@ -5,7 +5,6 @@ import { SlLogin } from "react-icons/sl";
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
-  
   const [show, setShow] = useState(false);
 
   const navigation = [
@@ -16,7 +15,7 @@ export default function NavBar() {
       href: "/trabajosRealizados",
       current: false,
     },
-    { name: "¿Quienes Somos?", href: "/quinesSomos", current: false },
+    { name: "¿Quiénes Somos?", href: "/quinesSomos", current: false },
     { name: "Contactos", href: "/contactos", current: false },
   ];
 
@@ -46,10 +45,7 @@ export default function NavBar() {
   return (
     <>
       <div className="min-h-full ">
-        <Disclosure
-          as="nav"
-          className="bg-gray-200 border-b-4 border-gray-300"
-        >
+        <Disclosure as="nav" className="bg-gray-200 border-b-4 border-gray-300">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-1 sm:px-6 lg:px-20">
@@ -67,16 +63,18 @@ export default function NavBar() {
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
-                          <a
-                            key={item.name}
-                            href={item.href}
-                            className={classNames(
-                              "ease-out duration-300 text-black-800 hover:bg-lime-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                            )}
-                            aria-current={item.current ? "page" : undefined}
-                          >
-                            {item.name}
-                          </a>
+                          <Link to={item.href}>
+                            <button
+                              type="button"
+                              key={item.name}
+                              className={classNames(
+                                "ease-out duration-300 text-black-800 hover:bg-lime-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                              )}
+                              aria-current={item.current ? "page" : undefined}
+                            >
+                              {item.name}
+                            </button>
+                          </Link>
                         ))}
                       </div>
                     </div>
@@ -100,7 +98,7 @@ export default function NavBar() {
                             to="/"
                           >
                             <SlLogin className="h-4 w-4 mr-4" />
-                            Inicio de Sesion
+                            Inicio de Sesión
                           </button>
                         </Link>
                       )}
@@ -108,7 +106,7 @@ export default function NavBar() {
                   </div>
                   <div className="-mr-2 flex md:hidden">
                     {/* Version telefono menu */}
-                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-lime-700 p-2 text-slate-100 border border-slate-100 hover:border-lime-700 hover:bg-slate-100 hover:text-lime-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-lime-700 p-2 text-slate-100 border border-slate-100 hover:border-lime-700 hover:bg-slate-100 hover:text-lime-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 mr-4">
                       <span className="sr-only">Abrir Menu</span>
                       {open ? (
                         <XMarkIcon
@@ -129,10 +127,10 @@ export default function NavBar() {
               <Disclosure.Panel data-aos="zoom-in" className="md:hidden ">
                 <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
                   {navigation.map((item) => (
+                    <Link to={item.href}>
                     <Disclosure.Button
                       key={item.name}
                       as="a"
-                      href={item.href}
                       className={classNames(
                         item.current
                           ? "bg-lime-700 text-white"
@@ -143,6 +141,7 @@ export default function NavBar() {
                     >
                       {item.name}
                     </Disclosure.Button>
+                    </Link>
                   ))}
                 </div>
 
@@ -154,7 +153,7 @@ export default function NavBar() {
                       onClick={() => logOut()}
                     >
                       <SlLogin className="h-4 w-4 mr-4" />
-                      Cierre de Sesion
+                      Cierre de Sesión
                     </button>
                   ) : (
                     <Link to={"/login"}>
@@ -163,7 +162,7 @@ export default function NavBar() {
                         class="ease-out duration-500 text-black-900 bg-white hover:bg-lime-700 hover:text-white border border-lime-700 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"
                       >
                         <SlLogin className="h-4 w-4 mr-4" />
-                        Inicio de Sesion
+                        Inicio de Sesión
                       </button>
                     </Link>
                   )}

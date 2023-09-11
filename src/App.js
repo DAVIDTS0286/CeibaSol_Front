@@ -8,7 +8,7 @@ import Servicios from "./components/servicios/servicios";
 import TrabajosRealizados from "./components/trabajosRealizados/mainTrabajosRealizados";
 import NavBar from "./components/mainComponents/navBar";
 import FooterCS from "./components/mainComponents/footerCS";
-import Cuerpo from "./components/menu/cuerpo";
+import Menu from "./components/menu/Menu";
 import Login from "./components/login/login";
 import FloatingButton from "./components/contactos/escribenos";
 
@@ -18,7 +18,7 @@ function App() {
       <BrowserRouter>
         <NavBar/>
             <Routes>
-              <Route path="/" element={<Cuerpo />} />
+              <Route path="/" element={<Menu />} />
               <Route path="/servicios" element={<Servicios />} />
               <Route path="/quinesSomos" element={<QuienesSomos />} />
               <Route path="/contactos" element={<Contactos />} />

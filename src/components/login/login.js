@@ -48,7 +48,7 @@ export default function Login() {
             />
             <p
               tabindex="0"
-              class="focus:outline-none text-2xl font-extrabold leading-6 text-gray-800 pt-6"
+              class="flex justify-center text-center focus:outline-none text-2xl font-extrabold leading-6 text-gray-800 pt-6"
             >
               Login (Administrador)
             </p>
@@ -104,7 +104,7 @@ export default function Login() {
                 class="ease-out duration-500 text-sm font-semibold leading-none text-white focus:outline-none bg-lime-700 border rounded-[24px] hover:bg-zinc-300 hover:text-zinc-900 py-4 w-full"
                 onClick={() => logIn()}
               >
-                Inicio de Sesion
+                Inicio de Sesión
               </button>
             </div>
             {/* RENDERIZADO CONDICIONAL */}

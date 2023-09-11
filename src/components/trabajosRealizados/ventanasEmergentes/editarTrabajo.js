@@ -78,30 +78,30 @@ export default function EditarTrabajo(props) {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="overflow-y-auto h-96 px-8 container mx-auto p-4">
       <div
         data-aos="flip-up"
-        className="flex flex-wrap justify-center bg-lime-700 rounded-lg rounded-[24px]"
+        className="flex flex-wrap justify-center bg-lime-700 rounded-lg rounded-[24px] "
       >
         <div className=" block p-2 ">
-          <h5 className=" mb-2 text-2xl font-bold tracking-tight text-slate-50">
+          <h5 className=" mb-2 text-2xl text-center font-bold tracking-tight text-slate-50">
             EDITAR - Trabajo Realizado
           </h5>
         </div>
       </div>
       <br />
       <br />
-      <form className="px-8" onSubmit={handleSubmit}>
-        <div className="mb-4 flex">
-          <div className="w-1/4">
+      <form className="sm:px-8 md:px-8 lg:px-8 xl:px-8 2xl:px-8 " onSubmit={handleSubmit}>
+        <div className="mb-4 sm:flex md:flex lg:flex xl:flex 2xl:flex">
+          <div className="sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 2xl:w-1/4">
             <label
-              className="block text-gray-700 font-bold mb-2"
+              className="block text-gray-700 font-bold mb-2 "
               htmlFor="nameService"
             >
               Nombre del trabajo
             </label>
           </div>
-          <div className="w-3/4">
+          <div className="sm:w-3/4 md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4">
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="nameService"
@@ -113,8 +113,8 @@ export default function EditarTrabajo(props) {
           </div>
         </div>
 
-        <div className="mb-4 flex">
-          <div className="w-1/4">
+        <div className="mb-4 sm:flex md:flex lg:flex xl:flex 2xl:flex">
+          <div className="sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 2xl:w-1/4">
             <label
               className="block text-gray-700 font-bold mb-2"
               htmlFor="nameService"
@@ -122,7 +122,7 @@ export default function EditarTrabajo(props) {
               Descripcion
             </label>
           </div>
-          <div className="w-3/4">
+          <div className="sm:w-3/4 md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4">
             <textarea
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="nameService"
@@ -135,13 +135,13 @@ export default function EditarTrabajo(props) {
         </div>
 
         {linkImg.map((Image, index) => (
-          <div className="mb-4 flex" key={index}>
-            <div className="w-1/4">
+          <div className="mb-4 sm:flex md:flex lg:flex xl:flex 2xl:flex" key={index}>
+            <div className="sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 2xl:w-1/4">
               <label className="block text-gray-700 font-bold mb-2">
                 {index === 0 ? "Links Imagenes" : ""}
               </label>
             </div>
-            <div className="w-3/4">
+            <div className="sm:w-3/4 md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4">
               <div className="flex">
                 <input
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-2"
@@ -164,9 +164,9 @@ export default function EditarTrabajo(props) {
             </div>
           </div>
         ))}
-        <div className="mb-4 flex">
-          <div className="w-1/4" />
-          <div className="w-3/4">
+        <div className="mb-4 sm:flex md:flex lg:flex xl:flex 2xl:flex">
+          <div className="sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 2xl:w-1/4" />
+          <div className="sm:w-3/4 md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4">
             <div className="flex">
               <button
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"

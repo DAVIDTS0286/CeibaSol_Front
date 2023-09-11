@@ -4,7 +4,7 @@ export default function QuienesSomos() {
   return (
     <div>
       <header className="bg-white shadow">
-        <div className="pt-6 flex space-x-2 justify-center ">
+        <div className="pt-6 flex space-x-2 justify-center text-center">
           <h1 className="text-5xl font-medium leading-tight text-gray-800 mb-2.5 mt-0">
             ¿QUIÉNES SOMOS?
           </h1>
@@ -14,10 +14,10 @@ export default function QuienesSomos() {
         <div className="mx-auto max-w-7xl py-2 sm:px-6 lg:px-10 flex">
           <div className="px-4 py-6 sm:px-0 space-y-8">
 
-            <div data-aos="fade-left" className="block p-6 bg-white border border-lime-700 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-              <div className="flex flex-col md:flex-row">
+            <div data-aos="fade-left" className="block p-6 bg-gray-200 border border-lime-700 rounded-lg shadow">
+              <div className="flex flex-col md:flex-row justify-center items-center">
                 <div className="md:w-1/4 md:order-1 flex-auto p-6">
-                  <div className="flex-none w-52 md:place-content-center">
+                  <div className="flex-none w-52 md:place-content-center justify-center">
                     <img src="julian-f.png" alt="" className="relative inset-0 w-500 h-500 object-cover rounded-lg" loading="lazy" />
                   </div>
                 </div>
@@ -38,8 +38,8 @@ export default function QuienesSomos() {
               </div>
             </div>
 
-            <div data-aos="fade-right" className="block p-6 bg-white border border-lime-700 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-              <div className="flex flex-col md:flex-row">
+            <div data-aos="fade-right" className="block p-6 bg-gray-200 border border-lime-700 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+              <div className="flex flex-col md:flex-row justify-center items-center">
                 <div className="md:w-1/4 md:order-2 flex-auto p-6">
                   <div className="flex-none w-52 ">
                     <img src="cristian-s.png" alt="" className="relative inset-0 w-500 h-500 object-cover rounded-lg" loading="lazy" />
@@ -71,8 +71,8 @@ export default function QuienesSomos() {
               </div>
             </div>
 
-            <div data-aos="fade-left" className="block p-6 bg-white border border-lime-700 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-              <div className="flex flex-col md:flex-row">
+            <div data-aos="fade-left" className="block p-6 bg-gray-200 border border-lime-700 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+              <div className="flex flex-col md:flex-row justify-center items-center">
                 <div className="md:w-1/4 md:order-1  flex-auto p-6">
                   <div className="flex-none w-52 ">
                     <img src="angie-g.png" alt="" className="relative inset-0 w-500 h-500 object-cover rounded-lg" loading="lazy" />
@@ -97,34 +97,34 @@ export default function QuienesSomos() {
 
             <div   className="px-4 py-6 sm:px-6 space-y-8">
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                <div data-aos="fade-up-right" className="p-6 bg-white border border-lime-700 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <div data-aos="fade-up-right" className="p-6 bg-gray-200 border border-lime-700 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                   <div className="flex flex-wrap items-baseline justify-center">
                     <h4 className=" mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      Mision
+                      Misión
                     </h4>
                     <br /><br />
                     <h5 className="font-normal text-gray-700 dark:text-gray-400 text-center sm:px-20">
-                      Ceiba Sol SAS es un equipo de trabajo apasionado por la sostenibilidad, brindando resolución a las problemáticas ambientales por medio de la consultoria.
+                      Ceiba Sol SAS es un equipo de trabajo apasionado por la sostenibilidad, brindando resolución a las problemáticas ambientales por medio de la consultoría.
                     </h5>
                   </div>
                 </div>
-                <div data-aos="fade-up-left" className="p-6 bg-white border border-lime-700 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <div data-aos="fade-up-left" className="p-6 bg-gray-200 border border-lime-700 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                   <div className="flex flex-wrap items-baseline justify-center">
                     <h4 className=" mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      Vision
+                      Visión
                     </h4>
                     <br /><br />
                     <h5 className="font-normal text-gray-700 dark:text-gray-400 text-center sm:px-20">
-                      Como visión está el desarrollo y i la búsqueda de innovación, para convertirse en una empresa ambientalmente sostenible, comprometida con los pilares empresariales y los propuestos en los Objetivos de Desarrollo Sostenible  de la ONU.                    </h5>
+                      Como visión está el desarrollo y la búsqueda de innovación, para convertirse en una empresa ambientalmente sostenible, comprometida con los pilares empresariales y los propuestos en los Objetivos de Desarrollo Sostenible  de la ONU.                    </h5>
                   </div>
                 </div>
               </div>
 
-              <div data-aos="fade-up" className=" block p-6 bg-white border border-lime-700 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+              <div data-aos="fade-up" className=" block p-6 bg-gray-200 border border-lime-700 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                 <div className="flex space-x-2 justify-center">
                   <div className="flex-auto p-6 px-4 py-6 sm:px-20">
                     <div className="flex flex-wrap items-baseline justify-center">
-                      <h4 className=" mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      <h4 className=" mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">
                         ¿Por qué nace CEIBA SOL SAS?
                       </h4>
                       <br /><br />

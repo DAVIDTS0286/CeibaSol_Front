@@ -14,7 +14,7 @@ export default function VerTrabajo(props) {
   }, [workId]);
 
   return (
-    <div className="block bg-white">
+    <div className="container mx-auto p-4">
       <div
         data-aos="flip-up"
         className="flex flex-wrap text-center justify-center bg-lime-700 rounded-lg rounded-[24px] mb-4"
@@ -28,7 +28,7 @@ export default function VerTrabajo(props) {
 
       <div className="bg-gray-400 rounded-lg rounded-[12px] flex space-x-2 justify-center">
         <div class="flex flex-wrap justify-center ">
-          <div class="w-1/6 md:w-6/12 lg:w-6/12 xl:w-6/12 2xl:w-6/12 my-6  rounded-lg ">
+          <div class="w-4/5 sm:-6/12 md:w-6/12 lg:w-6/12 xl:w-6/12 2xl:w-6/12 my-6  rounded-lg ">
             <Carrusel imagenes={work.linkImg}></Carrusel>
           </div>
         </div>

@@ -26,24 +26,24 @@ function ImageGrid(props) {
     }, [service]);
     return (
         <div data-aos="zoom-in-down" className="fixed z-10 inset-0 overflow-y-auto bg-gray-900 bg-opacity-50">
-            <div className=" my-16 max-h-24">
+            <div className=" max-h-24">
                 <div className="flex items-center justify-center">
-                    <div className="bg-white w-7/12 mx-auto rounded-lg shadow-lg overflow-hidden">
+                    <div className="my-16 p-4 bg-white w-11/12 sm:w-7/12 md:w-7/12 lg:w-7/12 xl:w-7/12 2xl:w-7/12 mx-auto rounded-lg shadow-lg overflow-hidden overflow-y-auto">
                         <div className="container mx-auto p-4">
                             <div
                                 data-aos="flip-up"
-                                className="flex flex-wrap justify-center bg-lime-700 rounded-lg rounded-[24px]"
+                                className="flex flex-wrap justify-center bg-lime-700 rounded-lg rounded-[24px] mb-4"
                             >
                                 <div className=" block p-2 ">
-                                    <h5 className=" mb-2 text-2xl font-bold tracking-tight text-slate-50">
+                                    <h5 className=" mb-2 text-2xl font-bold tracking-tight text-slate-50 text-center">
                                         {service.nameService}
                                     </h5>
                                 </div>
                             </div>
                             <div>
-                                <div className=" rounded-lg rounded-[12px] flex space-x-2 justify-center">
+                                <div className="bg-gray-400 rounded-lg rounded-[12px] flex space-x-2 justify-center">
                                     <div class="flex flex-wrap justify-center ">
-                                        <div class="w-1/6 md:w-7/12 lg:w-7/12 xl:w-7/12 2xl:w-7/12 my-6 rounded-lg">
+                                        <div class="w-4/5 sm:-6/12 md:w-6/12 lg:w-6/12 xl:w-6/12 2xl:w-6/12 my-6 rounded-lg">
                                             <Carousel slideInterval={1000} showThumbs={false} selectedItem={activeIndex} onChange={setActiveIndex}>
                                                 {service.linkImg?.map((prop, index) => (
                                                     <div key={index}>
@@ -55,7 +55,7 @@ function ImageGrid(props) {
                                     </div>
                                 </div>
                             </div>
-                            <div class="overflow-y-auto h-36 flex flex-wrap w-full p-4">
+                            <div class="overflow-y-auto h-36 flex flex-wrap w-full p-4 my-4">
                                 <div role="list" class="space-y-5">
                                     {service.subService?.map((subservice) => (
                                         <li data-aos="fade-right" class="flex space-x-3">

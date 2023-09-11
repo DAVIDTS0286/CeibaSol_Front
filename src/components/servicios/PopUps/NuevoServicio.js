@@ -63,11 +63,11 @@ function App(props) {
     }
 
     return (
-        <div data-aos="zoom-in-down" className="fixed z-10 inset-0 overflow-y-auto bg-gray-900 bg-opacity-50">
-            <div className=" my-16 max-h-24">
+        <div data-aos="zoom-in-down" className="fixed z-10 inset-0 bg-gray-900 bg-opacity-50">
+            <div className="max-h-24">
                 <div className="flex items-center justify-center">
-                    <div className="bg-white w-7/12 mx-auto rounded-lg shadow-lg overflow-hidden">
-                        <div className="container mx-auto p-4">
+                    <div className="my-16 p-4 bg-white w-11/12 sm:w-7/12 md:w-7/12 lg:w-7/12 xl:w-7/12 2xl:w-7/12 mx-auto rounded-lg shadow-lg overflow-hidden">
+                        <div className="overflow-y-auto h-96 container mx-auto p-4">
                             <div
                                 data-aos="flip-up"
                                 className="flex flex-wrap justify-center bg-lime-700 rounded-lg rounded-[24px]"
@@ -79,14 +79,14 @@ function App(props) {
                                 </div>
                             </div>
                             <br /><br />
-                            <form className="overflow-y-auto h-96 px-8" onSubmit={handleSubmit} >
-                                <div className="mb-4 flex">
-                                    <div className="w-1/4">
+                            <form className="px-8" onSubmit={handleSubmit} >
+                                <div className="mb-4 sm:flex md:flex lg:flex xl:flex 2xl:flex">
+                                    <div className="sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 2xl:w-1/4">
                                         <label className="block text-gray-700 font-bold mb-2" htmlFor="nameService">
                                             Título del Servicio
                                         </label>
                                     </div>
-                                    <div className="w-3/4">
+                                    <div className="sm:w-3/4 md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4">
                                         <input
                                             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                             id="nameService"
@@ -98,13 +98,13 @@ function App(props) {
                                     </div>
                                 </div>
                                 {linkImg.map((Image, index) => (
-                                    <div className="mb-4 flex" key={index}>
-                                        <div className="w-1/4">
+                                    <div className="mb-4 sm:flex md:flex lg:flex xl:flex 2xl:flex" key={index}>
+                                        <div className="sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 2xl:w-1/4">
                                             <label className="block text-gray-700 font-bold mb-2">
                                                 {index === 0 ? "Links Imagenes" : ""}
                                             </label>
                                         </div>
-                                        <div className="w-3/4">
+                                        <div className="sm:w-3/4 md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4">
                                             <div className="flex">
                                                 <input
                                                     className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-2"
@@ -127,9 +127,9 @@ function App(props) {
                                         </div>
                                     </div>
                                 ))}
-                                <div className="mb-4 flex">
-                                    <div className="w-1/4" />
-                                    <div className="w-3/4">
+                                <div className="mb-4 sm:flex md:flex lg:flex xl:flex 2xl:flex">
+                                    <div className="sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 2xl:w-1/4" />
+                                    <div className="sm:w-3/4 md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4">
                                         <div className="flex">
                                             <button
                                                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
@@ -142,13 +142,13 @@ function App(props) {
                                     </div>
                                 </div>
                                 {subService.map((Subservicio, index) => (
-                                    <div className="mb-4 flex" key={index}>
-                                        <div className="w-1/4">
+                                    <div className="mb-4 sm:flex md:flex lg:flex xl:flex 2xl:flex" key={index}>
+                                        <div className="sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 2xl:w-1/4">
                                             <label className="block text-gray-700 font-bold mb-2">
                                                 {index === 0 ? "Sub Servicios" : ""}
                                             </label>
                                         </div>
-                                        <div className="w-3/4">
+                                        <div className="sm:w-3/4 md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4">
                                             <div className="flex">
                                                 <input
                                                     className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-2"
@@ -171,9 +171,9 @@ function App(props) {
                                         </div>
                                     </div>
                                 ))}
-                                <div className="mb-4 flex">
-                                    <div className="w-1/4" />
-                                    <div className="w-3/4">
+                                <div className="mb-4 sm:flex md:flex lg:flex xl:flex 2xl:flex">
+                                    <div className="sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 2xl:w-1/4" />
+                                    <div className="sm:w-3/4 md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4">
                                         <div className="flex">
                                             <button
                                                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
@@ -187,18 +187,20 @@ function App(props) {
                                 </div>
                             </form>
                             <center>
-                                <button
-                                    className="ease-out duration-500 text-sm font-semibold leading-none text-white focus:outline-none bg-gray-500 border rounded-[15px] hover:bg-gray-300 hover:text-zinc-900 py-4 w-40"
-                                    onClick={deactivateAlert}
-                                >
-                                    Cancelar
-                                </button>
-                                {" "}
+                                
+                                
                                 <button
                                     className="ease-out duration-500 text-sm font-semibold leading-none text-white focus:outline-none bg-lime-700 border rounded-[15px] hover:bg-zinc-300 hover:text-zinc-900 py-4 w-40"
                                     onClick={() => handleNewService()}
                                 >
                                     Enviar
+                                </button>
+                                {" "}
+                                <button
+                                    className="ease-out duration-500 text-sm font-semibold leading-none text-white focus:outline-none bg-gray-500 border rounded-[15px] hover:bg-gray-300 hover:text-zinc-900 py-4 w-40"
+                                    onClick={deactivateAlert}
+                                >
+                                    Cancelar
                                 </button>
                             </center>
                         </div>
