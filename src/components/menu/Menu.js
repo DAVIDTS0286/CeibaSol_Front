@@ -3,13 +3,14 @@ import { motion } from "framer-motion";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 import CarruselMenu from "./CarruselMenu";
+import GameSection from "./GameSection"; // Importa el componente GameSection
 
 export default class Menu extends Component {
   render() {
     return (
       <div className="">
-        <header className="bg-white-600 ">
-          <div className="pt-1 flex space-x-2 justify-center ">
+        <header className="bg-white-600">
+          <div className="pt-1 flex space-x-2 justify-center">
             <motion.h1
               animate={{ y: 20 }}
               transition={{ delay: 0.5 }}
@@ -24,13 +25,11 @@ export default class Menu extends Component {
         </header>
 
         <main>
-          <div className="mx-auto max-w-7xl py-2 sm:px-6 lg:px-10 ">
-            {/* Replace with your content */}
+          <div className="mx-auto max-w-7xl py-2 sm:px-6 lg:px-10">
             <div className="px-4 py-6 sm:px-0">
-              {/* bg-lime-100 rounded-lg border-4 border-dashed border-gray-900 */}
               <div className="">
                 <div class="flex flex-wrap justify-center">
-                  <div class="w-6/12 sm:w-4/12 px-4 ">
+                  <div class="w-6/12 sm:w-4/12 px-4">
                     <motion.div
                       initial={{ opacity: 0, scale: 0.5 }}
                       animate={{ opacity: 1, scale: 1 }}
@@ -86,6 +85,11 @@ export default class Menu extends Component {
                     </blockquote>
                   </div>
                 </div>
+                {/* Agrega la sección del videojuego */}
+                <GameSection/>
+
+                
+
 
                 <div
                   data-aos="flip-up"
@@ -105,7 +109,7 @@ export default class Menu extends Component {
                 <li data-aos="fade-right" class="flex space-x-3">
                   <IoIosArrowDroprightCircle class="flex-shrink-0 w-5 h-5 text-lime-700" />
                   <h1 class="text-base font-normal leading-tight text-gray-700">
-                    <strong>Transparecia</strong>
+                    <strong>Transparencia</strong>
                   </h1>
                 </li>
                 <li data-aos="fade-left" class="flex space-x-3">
@@ -131,8 +135,6 @@ export default class Menu extends Component {
             </div>
 
             <div className="px-4 py-6 sm:px-0">
-              {/* bg-lime-100 rounded-lg border-4 border-dashed border-gray-900 */}
-
               <div
                 data-aos="fade-right"
                 className="flex space-x-2 justify-center text-center  rounded-lg rounded-[24px]"
@@ -148,7 +150,9 @@ export default class Menu extends Component {
               </div>
             </div>
 
-            {/* /End replace */}
+            
+            
+
           </div>
         </main>
       </div>
