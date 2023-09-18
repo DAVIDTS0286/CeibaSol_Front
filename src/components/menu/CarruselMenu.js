@@ -1,4 +1,4 @@
-import { Carousel } from "flowbite-react";
+import "./CarruselMenu.css";
 
 const images = [
   {
@@ -38,15 +38,24 @@ const images = [
 
 function CarruselMenu() {
   return (
-    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
-      <Carousel slideInterval={500} indicators={false}>
-        {images.map((image) => (
-          <div key={image.id} className="w-48 sm:w-56 xl:w-60 2xl:w-64">
-            <img src={image.image} alt={image.title} />
-          </div>
-        ))}
-      </Carousel>
+    <div class="slider">
+	<div class="slide-track">
+		<div class="slide">
+			<img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Logo_Cementos_Argos.png/800px-Logo_Cementos_Argos.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Holcim_logo.svg/320px-Holcim_logo.svg.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Escudo_de_Busbanz%C3%A1.svg/1200px-Escudo_de_Busbanz%C3%A1.svg.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://matematicasjjs.files.wordpress.com/2013/11/escudo.jpg" height="100" width="250" alt="" />
+		</div>
+	</div>
     </div>
+
+
   );
 }
 

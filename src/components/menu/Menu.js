@@ -85,12 +85,11 @@ export default class Menu extends Component {
                     </blockquote>
                   </div>
                 </div>
-                {/* Agrega la sección del videojuego */}
-                <GameSection/>
-
                 
-
-
+                <div data-aos="flip-right" className="">
+                  <GameSection/>
+                </div>
+           
                 <div
                   data-aos="flip-up"
                   class="flex flex-wrap justify-center bg-lime-700 rounded-lg rounded-[24px]"
@@ -145,7 +144,8 @@ export default class Menu extends Component {
                   </span>
                 </h1>
               </div>
-              <div class="bg-gray-300 rounded-lg rounded-[24px]">
+              <div data-aos="fade-down-right" class="rounded-lg rounded-[24px] scroll-smooth">
+                <br/>
                 <CarruselMenu></CarruselMenu>
               </div>
             </div>
