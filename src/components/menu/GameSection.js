@@ -19,7 +19,7 @@ function GameSection() {
     borderRadius: "50px", // Borde redondeado para simular una nube
     boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.5)",
     zIndex: "1",
-    animation: "fade-out 20s linear", // Animación para que dure 10 segundos
+    animation: "fade-out 40s linear", // Animación para que dure 10 segundos
     fontFamily: "Comic Sans MS", // Cambia la fuente a Comic Sans
     
   };
@@ -43,9 +43,8 @@ function GameSection() {
       </h1>
 
       <p className="text-gray-600 text-size-40">
-        ¡Hola! ¿Quieres saber más acerca de nuestra empresa?
-        <br />
-        Hazlo de una forma interactiva con nuestro videojuego!!
+      Explora un mundo virtual donde la conservación y la diversidad ambiental son tu mayor desafío y tu mayor recompensa. 
+      <br />¡Bienvenido al juego que te adentra al mundo dels sostenimiento ambiental!
       </p>
       <br />
       <div style={{ position: "relative" }}>
@@ -57,7 +56,7 @@ function GameSection() {
           </div>
         )}
         <iframe
-          src="http://localhost:4000/src/components/menu/Game/game.html"
+          src="https://davidts286.github.io/game/game.html"
           title="Videojuego Unity"
           style={iframeStyle}
         />
