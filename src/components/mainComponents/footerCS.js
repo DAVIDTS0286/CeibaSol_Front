@@ -94,33 +94,40 @@ export default function FooterCS() {
                 
                 <h6 class="font-semibold mb-4 flex justify-center md:justify-start text-lime-800 text-2xl">
                   <strong></strong>
-                  Redes sociales
+                 Redes sociales
                 </h6>
+                <div class="flex items-center ">
                 <a
-                  class="flex items-center justify-center md:justify-start mb-2"
+                  class="flex items-center justify-center md:justify-start mb-2 hover:text-blue-700 pr-7 hover:scale-110"
                   href="https://www.facebook.com/profile.php?id=100090879139349"
-                  TARGET="blank"
+                  target="_blank"
                   rel="noreferrer"
                 >
                   <AiOutlineFacebook
-                    style={{ marginRight: "10" }}
-                    class="w-6 h-6 mb-2 "
-                  ></AiOutlineFacebook>
+                    style={{ marginRight: "15" }}
+                    class="w-6 h-6 mb-2"
+                  >
+                    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      
+                    </svg>
+                  </AiOutlineFacebook> 
+
                 </a>
 
+
                 <a
-                  class="flex items-center justify-center md:justify-start mb-2"
+                  class="flex items-center justify-center md:justify-start mb-2 pr-7 hover:scale-110 hover:text-pink-500"
                   href="https://www.instagram.com/ceiba_sol/"
                   TARGET="blank"
                   rel="noreferrer"
                 >
                   <AiOutlineInstagram
-                    style={{ marginRight: "10" }}
+                    style={{ marginRight: "15" }}
                     class="w-6 h-6 mb-2 "
                   ></AiOutlineInstagram>
                 </a>
                 <a
-                  class="flex items-center justify-center md:justify-start mb-2"
+                  class="flex items-center justify-center md:justify-start mb-2 hover:text-green-600 pr-7 hover:scale-110"
                   href="https://api.whatsapp.com/send?phone=573102741994&text=Hola,%20quiero%20hacer%20una%20consulta"
                   TARGET="blank"
                   rel="noreferrer"
@@ -130,6 +137,7 @@ export default function FooterCS() {
                     class="w-6 h-6 mb-2 "
                   ></FaWhatsapp>
                 </a>
+                </div>
               </div>
             </div>
           </div>

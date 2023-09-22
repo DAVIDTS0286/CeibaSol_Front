@@ -33,7 +33,13 @@ export default function Contactos() {
       asunto === "" ||
       mensaje === ""
     ) {
-      setMensajeEmergente("HAY CAMPOS VACIOS");
+      setMensajeEmergente("HAY CAMPOS VACÍOS");
+      setWindowEmergente2(true);
+    } else if (!validateEmail(correo)) {
+      setMensajeEmergente("El formato del correo electrónico no es válido.");
+      setWindowEmergente2(true);
+    } else if (!validatePhone(telefono)) {
+      setMensajeEmergente("El número de teléfono no es válido.");
       setWindowEmergente2(true);
     } else {
       setLoading(true);
@@ -56,6 +62,17 @@ export default function Contactos() {
           setWindowEmergente(true);
         });
     }
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailRegex.test(email);
+  };
+
+  // Función para validar el número de teléfono (formato simple)
+  const validatePhone = (phone) => {
+    const phoneRegex = /^[0-9]{10}$/; // Asumiendo un formato de 10 dígitos
+    return phoneRegex.test(phone);
   };
 
   return (
@@ -103,7 +120,7 @@ export default function Contactos() {
                   </h5>
 
                   <p class="mb-3 font-normal text-gray-500 flex justify-center">
-                    ceibasolsas@gmail.com
+                    ceibasolmail@gmail.com
                   </p>
                 </div>
 
@@ -167,14 +184,14 @@ export default function Contactos() {
                 <div class="flex justify-center">
                   <div data-aos="fade-right">
                     <a
-                      href="https://www.instagram.com/ceiba_sol/"
+                      href="https://api.whatsapp.com/send?phone=573102741994&text=Hola,%20quiero%20hacer%20una%20consulta"
                       TARGET="blank"
                       rel="noreferrer"
                     >
                       <img
                         className="hover:animate-pulse object-contain h-20 w-21"
-                        src="https://logotipoz.com/wp-content/uploads/2021/10/instagram-2-1.svg"
-                        alt="Instagram"
+                        src="https://cdn-icons-png.flaticon.com/512/124/124034.png?w=360"
+                        alt="WhatsApp"
                       />
                     </a>
                   </div>
@@ -193,14 +210,15 @@ export default function Contactos() {
                   </div>
                   <div data-aos="fade-left">
                     <a
-                      href="https://api.whatsapp.com/send?phone=573102741994&text=Hola,%20quiero%20hacer%20una%20consulta"
+                      href="https://www.instagram.com/ceiba_sol/"
                       TARGET="blank"
                       rel="noreferrer"
                     >
                       <img
                         className="hover:animate-pulse object-contain h-20 w-21"
-                        src="https://cdn-icons-png.flaticon.com/512/124/124034.png?w=360"
-                        alt="WhatsApp"
+                        src="https://logotipoz.com/wp-content/uploads/2021/10/instagram-2-1.svg"
+                        alt="Instagram"
+                        
                         style={{ borderRadius: "10px" }}
                       />
                     </a>

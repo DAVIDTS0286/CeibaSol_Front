@@ -38,13 +38,13 @@ function GameSection() {
     <div className="py-6 container text-center">
       <h1 className="my-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-4xl">
         <span className="text-transparent bg-clip-text bg-gradient-to-r to-lime-600 from-lime-900 animate-pulse">
-          ¿Qué hacemos?
+          Conócenos un poco mas...
         </span>
       </h1>
 
       <p className="text-gray-600 text-size-40">
       Explora un mundo virtual donde la conservación y la diversidad ambiental son tu mayor desafío y tu mayor recompensa. 
-      <br />¡Bienvenido al juego que te adentra al mundo dels sostenimiento ambiental!
+      <br />¡Bienvenido al juego que te adentra al mundo del sostenimiento ambiental!
       </p>
       <br />
       <div style={{ position: "relative" }}>
