@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiBack = "http://localhost:5000/api/";
-//const apiBack = "https://ceibasol.azurewebsites.net/api/";
+//const apiBack = "https://vercel.com/ceibasolsas/ceiba-sol-back/api/";
 
 export let token = localStorage.getItem("token")
 

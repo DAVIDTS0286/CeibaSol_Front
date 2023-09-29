@@ -56,7 +56,7 @@ function GameSection() {
           </div>
         )}
         <iframe
-          src="https://davidts286.github.io/game/game.html"
+          src="https://trabajodecampo.github.io/Videojuego/"
           title="Videojuego Unity"
           style={iframeStyle}
         />
